@@ -6,7 +6,8 @@ function Project({ title, image, description, techstack, previewLink, githubLink
       <img src={image} alt="" loading="lazy" />
       <div className="dark:bg-dark-card p-4">
         <h1 className="dark:text-light-heading font-semibold text-lg pt-1">{title}</h1>
-        <p className="text-content pt-4 font-light">{description}</p>
+        {/* <p className="text-content pt-4 font-light">{description}</p> */}
+        <p className="text-content pt-4 font-light" dangerouslySetInnerHTML={{ __html: description }}/>
         <h3 className="text-dark-heading dark:text-light-heading font-medium pt-4">
           Tech Stack : <span className="font-light">{techstack}</span>
         </h3>
@@ -35,7 +36,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
             </svg>
             <a
               href={previewLink}
-              target="_blank"
+              target={previewLink !== "#" ? "_blank" : undefined}
               rel="noreferrer noopener"
               className="underline pl-2 font-light dark:text-white"
             >
@@ -58,14 +59,27 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               />
             </svg>
 
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="underline pl-2 font-light dark:text-white"
-            >
-              View Code
-            </a>
+            {githubLink === "#" ? (
+              <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-zinc-800 rounded-lg px-3 py-1.5 cursor-not-allowed select-none min-w-fit">
+                <svg 
+                  className="w-4 h-4 mr-1.5 fill-current" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://w3.org"
+                >
+                  <path d="M12 2C9.24 2 7 4.24 7 7V10H6C4.9 10 4 10.9 4 12V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V12C20 10.9 19.1 10 18 10H17V7C17 4.24 14.76 2 12 2ZM9 7C9 5.34 10.34 4 12 4C13.66 4 15 5.34 15 7V10H9V7ZM12 17C10.9 17 10 16.1 10 15C10 13.9 10.9 13 12 13C13.1 13 14 13.9 14 15C14 16.1 13.1 17 12 17Z" />
+                </svg>
+                <span className="font-medium text-xs">Confidential</span>
+              </div>
+              ) : (
+              <a 
+                href={githubLink} 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                className="underline pl-2 font-light dark:text-white"
+              >
+                View Code
+              </a>
+              )}
           </div>
         </div>
       </div>

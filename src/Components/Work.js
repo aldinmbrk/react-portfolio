@@ -1,6 +1,6 @@
 import React from "react";
 
-function Work({ position, company, location, type, duration }) {
+function Work({ position, company, desc, location, type, duration }) {
   return (
     <article className="pt-8 border-b-2 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
       <div className="flex justify-between items-center">
@@ -42,6 +42,15 @@ function Work({ position, company, location, type, duration }) {
         </div>
         <p className="text-content text-xs md:text-sm font-light pl-1 min-w-fit">{duration}</p>
       </div>
+      {desc && desc.length > 0 && (
+        <ul className="list-disc list-inside pt-4 space-y-1.5">
+          {desc.map((item,index) => (
+            <li
+              key={index}
+              className="text-content text-xs md:text-sm font-light text-opacity-80 dark:text-opacity-80">{item}</li>
+          ))}
+        </ul>
+      )}
     </article>
   );
 }

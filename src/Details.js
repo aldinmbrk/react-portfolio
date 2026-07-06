@@ -3,7 +3,7 @@
 import logogradient from "./assets/logo.svg";
 import logo from "./assets/logo2.svg";
 // Profile Image
-import profile from "./assets/profile.jpg";
+import profile from "./assets/profile1.jpeg";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -20,11 +20,11 @@ import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
 // Porject Images
-import projectImage1 from "./assets/projects/project1.jpg";
-import projectImage2 from "./assets/projects/project2.jpg";
-import projectImage3 from "./assets/projects/project3.jpg";
-import projectImage4 from "./assets/projects/project4.jpg";
-import projectImage5 from "./assets/projects/project5.jpg";
+import projectImage1 from "./assets/projects/project1.png";
+import projectImage2 from "./assets/projects/project2.png";
+import projectImage3 from "./assets/projects/project3.png";
+import projectImage4 from "./assets/projects/project4.png";
+import projectImage5 from "./assets/projects/project5.png";
 import projectImage6 from "./assets/projects/project6.jpg";
 
 // Logos
@@ -35,60 +35,76 @@ export const logos = {
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
+  name: "Aldin Mubarok",
   tagline: "I build things for web",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `Saya adalah Full-Stack Web Developer dengan 4+ tahun pengalaman aktif di PT. Fajar Baizuri Group(FBG) industri perkebunan kelapa sawit. Fokus utama saya adalah modernisasi sistem internal perusahaan guna memangkas birokrasi operasional melalui aplikasi berbasis web.`,
 };
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
   linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
+  github: "https://www.github.com/aldinmbrk",
   twitter: "https://twitter.com/",
-  instagram: "https://www.instagram.com/",
+  instagram: "https://www.instagram.com/aldinmbrk",
 };
 
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
+    Position: "Supervisor IT Development",
+    Company: `PT. Fajar Baizuri`,
+    Description: [
+      "Memimpin tim developer dalam merancang, mengembangkan, dan memodernisasi arsitektur sistem web internal perusahaan.",
+      "Mengoptimalkan performa database server untuk mempercepat laporan operasional perusahaan.",
+      "Berdiskusi dengan manajemen untuk menerjemahkan kebutuhan bisnis menjadi modul aplikasi."
+    ],
+    Location: "Jakarta Selatan",
     Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
+    Duration: "Jun 2023 - Sekarang",
   },
   {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Position: "Web Developer (Remote)",
+    Company: `PT. Pertamina Lubricants`,
+    Description: [
+      "Berkontribusi dalam pengembangan dan pemeliharaan modul sistem informasi internal perusahaan PT. Pertamina Lubricants.",
+      "Membangun RESTful API yang andal menggunakan Laravel/CodeIgniter serta mengintegrasikannya dengan komponen frontend interaktif.",
+      "Menjamin kualitas performa kode melalui standardisasi struktur kode, optimasi MySQL, serta penanganan bug secara berkala."
+    ],
+    Location: "Remote",
+    Type: "Part Time / Freelance",
+    Duration: "Mei 2024 - Sekarang",
   },
   {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Position: "Junior Programmer",
+    Company: `PT. Fajar Baizuri`,
+    Description: [
+      "Mengembangkan fitur baru, memelihara fungsionalitas sistem, dan memperbaiki bug pada aplikasi web internal perusahaan.",
+      "Menulis kode backend yang bersih dan terstruktur menggunakan framework CodeIgniter 4.",
+      "Membangun tampilan antarmuka (frontend) web internal yang responsif dan user-friendly untuk staf operasional lapangan.",
+      "Mendapat promosi menjadi Supervisor IT Development atas pencapaian performa kerja, inisiatif problem-solving, dan penguasaan tech stack."
+    ],
+    Location: "Jakarta Selatan",
+    Type: "Full Time",
+    Duration: "Jan 2021 - Feb 2023",
   },
 ];
 
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
-    Location: "Online",
+    Position: "Sarjana Teknik Informatika (S1)",
+    Company: "Universitas Indraprasta",
+    Location: "Jakarta Timur",
     Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Duration: "2016 - Agu 2020",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
-    Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Position: "Juara 2 - Live Coding Competition",
+    Company: `Universitas Indraprasta(UNINDRA)`,
+    Location: "Jakarta, Indonesia",
+    Type: "Competition",
+    Duration: "Agu 2019",
   },
 ];
 
@@ -113,63 +129,49 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
+    title: "OWL Plantation",
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `Sistem Perkebunan Kelapa Sawit Internal PT. Fajar Baizuri disebut dengan Sistem OWL. Sistem ini berisi modul Pengadaan, Pabrik, Traksi, Keuangan, SDM, Pemasaran, Budget Control, HelpDesk dll. Fokus utamanya adalah pengembangan fitur dan pengoptimalan performa database server.`,
+    techstack: "HTML/CSS, JavaScript, PHP, MySQL",
+    previewLink: "#",
+    githubLink: "#",
   },
   {
-    title: "Project title 2",
+    title: "Karir FBG",
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `Sistem Internal PT. Fajar Baizuri Group untuk pengelolaan rekrutment karyawan. Database kumpulan para pelamar, data kandidat ter-organisir dengan baik dikelompokan berdasarkan divisi lowongan pekerjaannya.`,
+    techstack: "HTML/CSS, JavaScript, PHP, MySQL",
+    previewLink: "#",
+    githubLink: "#",
   },
   {
-    title: "Project title 3",
+    title: "InspecPro PT. Pertamina Lubricants",
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `Keberhasilan dalam membangun dan mengembangkan sistem Q1 dan Q6 InspecPro PT. Pertamina Lubricants. Sistem ini masih terus berlanjut di kembangkan dengan menyesuaikan kebutuhan operasional perusahaan.`,
+    techstack: "HTML/CSS, JavaScript, PHP, MySQL",
+    previewLink: "#",
+    githubLink: "#",
   },
   {
-    title: "Project title 4",
+    title: "Movie Database",
     image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `Mini project membuat sistem untuk menampilkan daftar film terpopuler dari setiap tahun dengan mengambil data API dari <a class="text-blue-500 underline" href="https://www.themoviedb.org">TMDB (themoviedb.org)</a>. Film dapat di filter berdasarkan tahun release dan genre.`,
+    techstack: "HTML/CSS, JavaScript, Firebase",
+    previewLink: "https://dons-movie-database.web.app/",
+    githubLink: "https://github.com/aldinmbrk/dons-movie-database",
   },
   {
-    title: "Project title 5",
+    title: "Expense Tracker",
     image: projectImage5,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 6",
-    image: projectImage6,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `Mini project membuat sistem pencatatan pengeluaran personal, menyimpan pemasukan dan pengeluaran serta menampilkan total selisih antara keduanya.`,
+    techstack: "HTML/CSS, JavaScript, Firebase",
+    previewLink: "https://dons-expense-tracker.web.app/",
+    githubLink: "https://github.com/aldinmbrk/dons-expense-tracker",
   },
 ];
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "aldinmubarok.am@gmail.com",
+  phone: "+62 821-2233-2296",
 };
