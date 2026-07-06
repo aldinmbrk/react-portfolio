@@ -60,7 +60,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
             </svg>
 
             {githubLink === "#" ? (
-              <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-zinc-800 rounded-lg px-3 py-1.5 cursor-not-allowed select-none min-w-fit">
+              <div className="ml-1 flex items-center text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-zinc-800 rounded-lg px-3 py-1.5 cursor-not-allowed select-none min-w-fit">
                 <svg 
                   className="w-4 h-4 mr-1.5 fill-current" 
                   viewBox="0 0 24 24" 

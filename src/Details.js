@@ -152,20 +152,20 @@ export const projectDetails = [
     githubLink: "#",
   },
   {
-    title: "Movie Database",
-    image: projectImage4,
-    description: `Mini project membuat sistem untuk menampilkan daftar film terpopuler dari setiap tahun dengan mengambil data API dari <a class="text-blue-500 underline" href="https://www.themoviedb.org">TMDB (themoviedb.org)</a>. Film dapat di filter berdasarkan tahun release dan genre.`,
-    techstack: "HTML/CSS, JavaScript, Firebase",
-    previewLink: "https://dons-movie-database.web.app/",
-    githubLink: "https://github.com/aldinmbrk/dons-movie-database",
-  },
-  {
     title: "Expense Tracker",
-    image: projectImage5,
+    image: projectImage4,
     description: `Mini project membuat sistem pencatatan pengeluaran personal, menyimpan pemasukan dan pengeluaran serta menampilkan total selisih antara keduanya.`,
     techstack: "HTML/CSS, JavaScript, Firebase",
     previewLink: "https://dons-expense-tracker.web.app/",
     githubLink: "https://github.com/aldinmbrk/dons-expense-tracker",
+  },
+  {
+    title: "Movie Database",
+    image: projectImage5,
+    description: `Mini project membuat sistem untuk menampilkan daftar film terpopuler dari setiap tahun dengan mengambil data API dari <a class="text-blue-500 underline" href="https://www.themoviedb.org">TMDB (themoviedb.org)</a>. Film dapat di filter berdasarkan tahun release dan genre.`,
+    techstack: "HTML/CSS, JavaScript, Firebase",
+    previewLink: "https://dons-movie-database.web.app/",
+    githubLink: "https://github.com/aldinmbrk/dons-movie-database",
   },
 ];
 
